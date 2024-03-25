@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: stg_postgres_addresses
+    description: "Staging model for addresses dat."
+
+  - name: stg_postgres_events
+    description: "Staging model for events data."
+
+  - name: stg_postgres_order_items
+    description: "Staging model for order items data."
+
+  - name: stg_postgres_orders
+    description: "Staging model for orders data."
+
+  - name: stg_postgres_products
+    description: "Staging model for products data."
+
+  - name: stg_postgres_users
+    description: "Staging model for users data."
+
+  - name: stg_postgres_promos
+    description: "Staging model for promotions."
