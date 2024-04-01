@@ -2,7 +2,30 @@ version: 2
 
 models:
   - name: stg_postgres_addresses
-    description: "Staging model for addresses dat."
+    description: "Staging model for addresses data."
+    
+    columns:
+      - name: address_id
+        description: ''
+        test:
+          - not_null
+          - unique
+
+      - name: address
+        description: ''
+        test:
+          - not_null
+
+      - name: zipcode
+        description: ''
+        test:
+          - not_null
+
+      - name: state 
+        description: ''
+
+      - name: country
+        description: ''
 
   - name: stg_postgres_events
     description: "Staging model for events data."
@@ -12,9 +35,15 @@ models:
 
   - name: stg_postgres_orders
     description: "Staging model for orders data."
+   
 
   - name: stg_postgres_products
     description: "Staging model for products data."
+    columns:
+      - name: price
+        test:
+          - not_null
+          - positive_values
 
   - name: stg_postgres_users
     description: "Staging model for users data."
