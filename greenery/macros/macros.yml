@@ -1,0 +1,9 @@
+macros:
+  - name: sum_of
+    description: Sum a colume with specifc value
+    arguments:
+      - name: column_name
+        description: name of your column
+      - name: column_value
+  - name: grant
+    description: give access to certian roles
