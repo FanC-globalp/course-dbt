@@ -52,3 +52,8 @@ left join DEV_DB.DBT_FANCHENGLOBALPCOM.FACT_PRODUCTS P
     on P.PRODUCT_ID = PV.PRODCUT_ID
 group by 1,2
 ```
+
+Which products had their inventory change from week 2 to week 3? 
+
+Pothos
+Monstera

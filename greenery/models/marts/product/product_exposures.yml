@@ -1,0 +1,16 @@
+version: 2
+exposures:
+
+  - name: Product_funnel
+    type: dashboard
+    maturity: high
+    url: https://
+    description: >
+      Product funnel 
+    depends_on:
+      - ref('fact_page_views')
+
+
+    owner:
+      name: Fan Chen
+      email: lala

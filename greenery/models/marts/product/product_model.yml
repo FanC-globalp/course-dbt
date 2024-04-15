@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: fact_page_views
+    description: "by session by product count of each steps"
